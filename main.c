@@ -13,8 +13,8 @@ int main(void)
 	size_t size;
 	char *tokens[MAX_TOKENS];
 	char **env;
-	int exit_stat;
 	int i;
+	int exit_stat;
 
 	while (1)
 	{
@@ -47,5 +47,5 @@ int main(void)
 		for (i = 0; tokens[i] != NULL; i++)
 			free(tokens[i]); }
 	free(command);
-	return (0);
+	return (exit_stat);
 }

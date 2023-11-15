@@ -17,7 +17,7 @@ void handle_path(char *command, char *path)
 		executable_path = malloc(sizeof(char) *
 				(_strlen(path_token) + _strlen(command) + 2));
 		_strcpy(executable_path, path_token);
-		_strcat(exexutable_path, "/");
+		_strcat(executable_path, "/");
 		_strcat(executable_path, command);
 
 		if (access(executable_path, F_OK) != -1)
